@@ -62,7 +62,7 @@ async function getWeather(city) {
     if (!response.ok) throw new Error("Local não encontrado (OpenWeather)"); // Verifica se a resposta é válida
 
     const responsecast = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${city}&days=5&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${city}&days=5&aqi=no&alerts=no`
     );
     if (!responsecast.ok) throw new Error("Local não encontrado (WeatherAPI)"); // Verifica a segunda API
 
