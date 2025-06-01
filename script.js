@@ -95,10 +95,10 @@ navigator.geolocation.getCurrentPosition(async (position) => {
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`
   );
   const responsecast = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${latitude}, ${longitude}&days=5&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${latitude}, ${longitude}&days=5&aqi=no&alerts=no`
   );
   console.log(
-    `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${latitude}, ${longitude}&days=5&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY_CAST}&q=${latitude}, ${longitude}&days=5&aqi=no&alerts=no`
   );
   const data = await response.json();
   const datacast = await responsecast.json();
