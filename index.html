@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Yan Marques Soares" />
-    <meta
-      name="description"
-      content="Aplicação de Clima Tempo com Geolocalização a qual utiliza das APIs OpenWeather e WeatherAPI"
-    />
+    <meta name="description" content="Aplicação de Clima Tempo com Geolocalização a qual utiliza das APIs OpenWeather e WeatherAPI" />
     <meta name="keywords" content="Portfolio, Programação, FrontEnd" />
     <title>Clima Agora</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
     <!-- icones -->
   </head>
   <body class="" data-theme="dark">
@@ -23,7 +17,7 @@
       <h1>Clima em Tempo Real</h1>
       <header>
         <input type="text" id="city-input" placeholder="Digite um local..." />
-        <button id="search-btn"><span class="mdi mdi-magnify"></span></button>
+        <button id="search-btn"><img src="img/magnifying-glass.png" alt="Pesquisar" /></button>
       </header>
       <hr class="hr1" />
       <main>
@@ -31,11 +25,7 @@
           <div class="weather-main">
             <p id="city-name">Rio de Janeiro</p>
             <div id="weather-icon">
-              <img
-                id="weather-icon-img"
-                src="https://openweathermap.org/img/wn/01d.png"
-                alt="Icone do Clima"
-              />
+              <img id="weather-icon-img" src="https://openweathermap.org/img/wn/01d.png" alt="Icone do Clima" />
             </div>
             <p id="temperature">28°C</p>
           </div>
@@ -44,14 +34,8 @@
               <span id="weather-description">Ensolarado</span>
             </div>
             <!-- <span id="rain">🌧 0%</span> -->
-            <span
-              ><span class="mdi mdi-water"></span
-              ><span id="humidity">60%</span></span
-            >
-            <span
-              ><span class="mdi mdi-weather-windy"> </span
-              ><span id="wind">15 km/h</span></span
-            >
+            <span><span class="mdi mdi-water"></span><span id="humidity">60%</span></span>
+            <span><span class="mdi mdi-weather-windy"> </span><span id="wind">15 km/h</span></span>
           </div>
         </div>
       </main>
@@ -59,12 +43,7 @@
       <div class="forecast" id="forecast-container">
         <!-- Previsão para 5 dias via JS -->
         <div id="for-day-0">
-          <span class="day-week">dom.</span
-          ><span class="for-img"
-            ><img
-              src="https://openweathermap.org/img/wn/02d.png"
-              alt="Icone do Clima"
-          /></span>
+          <span class="day-week">dom.</span><span class="for-img"><img src="https://openweathermap.org/img/wn/02d.png" alt="Icone do Clima" /></span>
           <div>
             <p class="temp-min">25°C</p>
             <span>/</span>
@@ -72,12 +51,7 @@
           </div>
         </div>
         <div id="for-day-1">
-          <span class="day-week">seg.</span
-          ><span class="for-img"
-            ><img
-              src="https://openweathermap.org/img/wn/02d.png"
-              alt="Icone do Clima"
-          /></span>
+          <span class="day-week">seg.</span><span class="for-img"><img src="https://openweathermap.org/img/wn/02d.png" alt="Icone do Clima" /></span>
           <div>
             <p class="temp-min">25°C</p>
             <span>/</span>
@@ -85,12 +59,7 @@
           </div>
         </div>
         <div id="for-day-2">
-          <span class="day-week">ter.</span
-          ><span class="for-img"
-            ><img
-              src="https://openweathermap.org/img/wn/02d.png"
-              alt="Icone do Clima"
-          /></span>
+          <span class="day-week">ter.</span><span class="for-img"><img src="https://openweathermap.org/img/wn/02d.png" alt="Icone do Clima" /></span>
           <div>
             <p class="temp-min">25°C</p>
             <span>/</span>
@@ -98,12 +67,7 @@
           </div>
         </div>
         <div id="for-day-3">
-          <span class="day-week">qua.</span
-          ><span class="for-img"
-            ><img
-              src="https://openweathermap.org/img/wn/02d.png"
-              alt="Icone do Clima"
-          /></span>
+          <span class="day-week">qua.</span><span class="for-img"><img src="https://openweathermap.org/img/wn/02d.png" alt="Icone do Clima" /></span>
           <div>
             <p class="temp-min">25°C</p>
             <span>/</span>
@@ -111,12 +75,7 @@
           </div>
         </div>
         <div id="for-day-4">
-          <span class="day-week">qui.</span
-          ><span class="for-img"
-            ><img
-              src="https://openweathermap.org/img/wn/02d.png"
-              alt="Icone do Clima"
-          /></span>
+          <span class="day-week">qui.</span><span class="for-img"><img src="https://openweathermap.org/img/wn/02d.png" alt="Icone do Clima" /></span>
           <div>
             <p class="temp-min">25°C</p>
             <span>/</span>
@@ -127,9 +86,7 @@
     </div>
     <footer>
       <h3>
-        <a href="https://marquessyan.github.io/Portfolio/"
-          >Copyright © Yan Marques Soares, Todos os direitos reservados.</a
-        >
+        <a href="https://marquessyan.github.io/Portfolio/">Copyright © Yan Marques Soares, Todos os direitos reservados.</a>
       </h3>
     </footer>
     <script src="script.js"></script>
